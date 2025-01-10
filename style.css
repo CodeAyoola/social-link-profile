@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Inter";
+  src: "https://fonts.google.com/specimen/Inter";
+}
+
+html {
+  font-size: 62.5%;
+}
 body {
-  background-color: #141414;
+  font-family: "Inter";
+  background-color: hsl(0, 0%, 20%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,53 +19,75 @@ body {
 
 .container {
   /* height: 400px; */
-  width: 350px;
+  width: 35rem;
   text-align: center;
-  background-color: #1f1f1f;
-  border-radius: 10px;
-  margin-bottom: 50px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 1rem;
+  margin-bottom: 5rem;
 }
 
 .avatar {
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .avatar-name {
-  font-size: 24px;
-  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
 }
 
 .avatar-location {
-  font-size: 16px;
-  color: #b2cf3e;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: hsl(75, 94%, 57%);
 }
 
 .avatar-description {
-  font-size: 14px;
-  color: #bdbdbd;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 8%);
 }
 
 .all-btn {
-  margin: 30px 0 30px 0;
+  margin: 3rem 0 3rem 0;
 }
 
 .btn {
   display: block;
   color: #ffffff;
+  font-weight: 600;
   background: #333333;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  margin: 15px 30px 15px 30px;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 20%);
+  background-color: hsl(75, 94%, 57%);
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    height: 100vh;
+  }
+  .container {
+    width: 30rem;
+  }
 }
